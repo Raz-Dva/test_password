@@ -1,0 +1,41 @@
+.point {
+  width: 63px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 2px;
+  background-color: grey;
+}
+.strengthBar.red > .point,
+.point.red {
+  background-color: #E25643;
+}
+
+.yellow{
+  background-color: #EAB757;
+}
+
+.green{
+  background-color: #35BD6E;
+}
+
+.yellow:last-child,
+.point.red~* {
+  background-color: grey;
+}
+
+.strengthBar {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.strengthBar.invalid > li {
+  background-color: #E25643;
+}
+
+.invalid-char {
+  color: #E25643
+}
+
