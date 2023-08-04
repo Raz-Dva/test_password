@@ -5,17 +5,21 @@
   border-radius: 2px;
   background-color: grey;
 }
-.strengthBar.red > .point,
+
 .point.red {
-  background-color: #E25643;
+  background-color: var(--color-weak);
 }
 
 .yellow{
-  background-color: #EAB757;
+  background-color: var(--color-medium);
 }
 
 .green{
-  background-color: #35BD6E;
+  background-color: var(--color-strong);
+}
+
+.grey {
+  background-color: grey;
 }
 
 .yellow:last-child,
@@ -32,10 +36,10 @@
 }
 
 .strengthBar.invalid > li {
-  background-color: #E25643;
+  background-color: var(--color-weak);
 }
 
 .invalid-char {
-  color: #E25643
+  color: var(--color-weak);
 }
 
